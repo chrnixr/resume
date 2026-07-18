@@ -27,8 +27,13 @@ This is my personal resume showcasing 8+ years of experience in:
 **Technologies:** .Net Core, .Net Framework, Spring Boot, Docker, MS SQL, PostgreSQL, Git, Dynatrace, GitHub Copilot, Claude Code
 
 ## 📥 Download Resume
-<img src="charoen_cv.png" alt="Resume Preview" width="600">
 [📄 Download Resume PDF](./charoen_cv.pdf)
+
+### Page 1
+![Resume Preview - Page 1](./charoen_cv_1.jpeg)
+
+### Page 2
+![Resume Preview - Page 2](./charoen_cv_2.jpeg)
 
 ---
 ## 🚀 Quick Start
