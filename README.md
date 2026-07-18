@@ -30,10 +30,10 @@ This is my personal resume showcasing 8+ years of experience in:
 [📄 Download Resume PDF](./charoen_cv.pdf)
 
 ### Page 1
-![Resume Preview - Page 1](./charoen_cv_1.jpeg)
+![Resume Preview - Page 1](./charoen_cv_1.jpg)
 
 ### Page 2
-![Resume Preview - Page 2](./charoen_cv_2.jpeg)
+![Resume Preview - Page 2](./charoen_cv_2.jpg)
 
 ---
 ## 🚀 Quick Start
