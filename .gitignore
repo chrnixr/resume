@@ -38,3 +38,6 @@ Thumbs.db
 
 # Docker
 .dockerignore
+
+# Local preview scratch
+tmp/

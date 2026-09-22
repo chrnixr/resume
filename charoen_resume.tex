@@ -18,6 +18,7 @@
 \usepackage[english]{babel}
 \usepackage{tabularx}
 \usepackage{fontawesome5}
+\usepackage{needspace}
 \usepackage{multicol}
 \setlength{\multicolsep}{-3.0pt}
 \setlength{\columnsep}{-1pt}
@@ -43,22 +44,23 @@
 \renewcommand{\footrulewidth}{0pt}
 
 % Adjust margins
-\addtolength{\oddsidemargin}{-0.6in}
-\addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1.19in}
-\addtolength{\topmargin}{-.7in}
-\addtolength{\textheight}{1.4in}
+\addtolength{\oddsidemargin}{-0.4in}
+\addtolength{\evensidemargin}{-0.4in}
+\addtolength{\textwidth}{0.8in}
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{1.0in}
 
 \urlstyle{same}
 
 \raggedbottom
 \raggedright
 \setlength{\tabcolsep}{0in}
+\linespread{1.05}
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large\bfseries
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+  \vspace{6pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{3pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
@@ -67,47 +69,47 @@
 % Custom commands
 \newcommand{\resumeItem}[1]{
   \item\small{
-    {#1 \vspace{-2pt}}
+    {#1 \vspace{2pt}}
   }
 }
 
 \newcommand{\classesList}[4]{
     \item\small{
-        {#1 #2 #3 #4 \vspace{-2pt}}
+        {#1 #2 #3 #4 \vspace{2pt}}
   }
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-2pt}\item
+  \vspace{1pt}\item
     \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & \textbf{\small #2} \\
       \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}\vspace{1pt}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}\vspace{1pt}
 }
 
 \newcommand{\resumeProjectHeading}[2]{
     \item
     \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
       \small#1 & \textbf{\small #2}\\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}\vspace{1pt}
 }
 
-\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{1pt}}
 
 \renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[topsep=0pt, parsep=0pt, itemsep=0pt, leftmargin=0.0in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[topsep=0pt, parsep=0pt, itemsep=0pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{4pt}}
 
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -120,15 +122,15 @@
     {\Huge \scshape Charoen Chaweechan} \\ \vspace{1pt}
     Bangkok, Thailand, 10150 \\ \vspace{1pt}
     \small \raisebox{-0.1\height}\faPhone\ +66 84263 6259 ~ \href{mailto:ch.chaweechan@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{ch.chaweechan@gmail.com}} ~ 
-    \href{https://linkedin.com/in/charoen-software-engineer/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/charoen-software-engineer}}  ~
+    \href{https://linkedin.com/in/charoen-chaweechan/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/charoen-chaweechan/}}  ~
     \href{https://github.com/chrnixr}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/chrnixr}}
-    \vspace{-8pt}
+    \vspace{2pt}
 \end{center}
 
 %-----------About ME-----------
 \section{About Me}
   \resumeSubHeadingListStart
-    \resumeItem{Senior Software Engineer with 8+ years of experience designing and building scalable backend systems and highavailability architectures within the fintech domain. Specialized in microservices and event-driven systems, with a strong track record of delivering reliable, highperformance platforms supporting large-scale financial operations. Proven ability to architect and integrate backend services that handle high-volume transactions while ensuring security, fault tolerance, and system stability. At Krungsri Nimble, contributed to the architecture and development of a digital banking platform serving over 199K users, maintaining zero downtime and zero critical production incidents. Experienced in backend integration, distributed systems, and production reliability under mission-critical environments.}
+    \resumeItem{Software Engineer with 7+ years of experience building and supporting enterprise digital banking systems. Strong background in C\#/.NET, backend services, REST APIs, microservices, and system integration across complex banking workflows. Experienced in system design, application modernization, security, production troubleshooting, and technical impact analysis across interconnected services. Comfortable taking ownership of features from technical design and implementation through testing, deployment, and production support.}
   \resumeSubHeadingListEnd
 
 
@@ -140,44 +142,42 @@
       {Bachelor of Engineering (B.Eng.) Software Engineering (International Program)}{Bangkok, Thailand}
   \resumeSubHeadingListEnd
 
-%----------KEY achievements ------
-\section{Key achievements}
-  \resumeItemListStart
-    \resumeItem{Supported digital banking platform serving \textbf{199K+ users and 37K+ monthly active clients}.}
-    \resumeItem{Achieved zero downtime and zero P1/P2 incidents in production during 2025.}
-    \resumeItem{Built enterprise financial systems supporting \textbf{28K+ clients}.}
-    \resumeItem{Delivered mission-critical transaction services for banking operations.}
-  \resumeItemListEnd
-
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{description}[leftmargin=1.9in, labelsep=0.4em, itemsep=3pt, topsep=0pt, parsep=0pt, font=\normalfont\bfseries]
+    \small
+    \item[Languages:] Python, Java, C\#, TypeScript/JavaScript, HTML, CSS, SQL
+    \item[Cloud \& Infrastructure:] AWS, Azure, CI/CD
+    \item[Technologies/Frameworks:] .Net Core, .Net Framework, Spring Boot, React, Flutter, Docker, MS SQL, PostgreSQL, Git, Dynatrace
+ \end{description}
 
 %-----------EXPERIENCE-----------
 \section{Experience}
   \resumeSubHeadingListStart
 
-    \resumeSubheading
-      {Krungsri Nimble}{Dec 2020 -- Present}
-      {Senior Software Engineer}{Bangkok, Thailand}
-      \resumeItemListStart
-        \resumeItem{Designed and contributed to \textbf{backend architecture and microservices integration} for a large-scale digital banking platform.}
-        \resumeItem{Built and supported systems serving \textbf{199K+ users and 37K+ monthly active clients}.}
-        \resumeItem{Developed and integrated \textbf{high-volume financial transaction services} including transfers/swift transfer, QR payments, and payroll processing.}
-        \resumeItem{Implemented \textbf{event-driven architecture patterns} to improve system scalability and fault tolerance.}
-        \resumeItem{Collaborated on \textbf{secure backend integrations} supporting enterprise financial operations for \textbf{28K+ clients}.}
-        \resumeItem{Achieved \textbf{zero downtime and zero P1/P2 incidents} in production during 2025.}
-        \resumeItem{Worked closely with cross-functional teams to ensure \textbf{robust system design and production stability}.}
-      \resumeItemListEnd
+\resumeSubheading
+  {Krungsri Nimble}{Dec 2020 -- Present}
+  {Senior Software Engineer}{Bangkok, Thailand}
+  \resumeItemListStart
 
+    \resumeItem{Developed and enhanced enterprise \textbf{digital banking platforms} covering fund transfers, bill payments, account statements, lending, PromptPay/QR payments, transaction-limit management, cardless transactions, and international SWIFT transfers.}
+    \resumeItem{Designed and implemented \textbf{C\#/.NET backend services, microservices, and REST APIs}, integrating multiple internal banking systems, databases, shared services, and downstream applications across complex transaction flows.}
+    \resumeItem{Contributed to the \textbf{modernization of the mobile banking application from Xamarin to Flutter}, implementing and maintaining key banking journeys including authentication, account management, scheduled transfers, loan information, transaction limits, and related automated tests.}
+    \resumeItem{Designed and implemented \textbf{international transfer capabilities supporting SWIFT and SEPA-related flows}, including beneficiary management, exchange-rate processing, transfer fees, pending transactions, approval workflows, reference-data integration, and dual-control processes.}
+    \resumeItem{Developed \textbf{background services and batch-processing solutions} for customer profiling, data processing, migration, and transaction workflows, incorporating retry handling, processing-status tracking, database procedures, CDC-based processing, and resilience mechanisms.}
+    \resumeItem{Investigated and resolved \textbf{production incidents across critical digital banking journeys}, identifying root causes and implementing improvements to validation, error handling, retries, logging, and service integration reliability.}
+    \resumeItem{Performed \textbf{technical impact analysis across interconnected systems} and supported API evolution, legacy-service migration, service deprecation, application health checks, database integration, and configuration across multiple environments.}
+  \resumeItemListEnd
+
+    \needspace{11\baselineskip}
     \resumeSubheading
       {KBTG}{Jan 2019 -- Nov 2020}
       {Software Engineer}{Bangkok, Thailand}
       \resumeItemListStart
-        \resumeItem{Developed \textbf{Credit Bureau Integration System (KCBS)} supporting both batch and real-time processing.}
-        \resumeItem{Enabled seamless integration with National Credit Bureau (NCB) systems for loan approval workflows.}
-        \resumeItem{Built \textbf{Income Verification Platform (KVI)} to automate borrower financial validation.}
-        \resumeItem{Improved processing efficiency and accuracy for loan decision-making.}
-        \resumeItem{Implemented data import, calculation rules, and reporting (Excel/PDF export).}
-        \resumeItem{Managed production releases with \textbf{zero rollback incidents}.}
-        \resumeItem{Established monitoring and incident handling processes to maintain system reliability.}
+        \resumeItem{Developed and owned the \textbf{Credit Bureau Integration System (KCBS)} and \textbf{Income Verification Platform (KVI)} web applications for the Loan Origination department, supporting both batch and real-time National Credit Bureau (NCB) integration for loan approval workflows.}
+        \resumeItem{Prepared \textbf{release packages and deployment artifacts}, and led production deployment activities to ensure smooth, zero-rollback releases.}
+        \resumeItem{Acted as \textbf{Site Reliability Engineer (SRE)} for both systems, owning end-to-end incident management under a \textit{"you build it, you run it"} model, from detection and root-cause analysis through remediation and monitoring improvements.}
+        \resumeItem{Improved processing efficiency and accuracy for loan decision-making through automated borrower financial validation.}
     \resumeItemListEnd
 
     \resumeSubheading
@@ -185,9 +185,7 @@
       {Software Engineer}{Bangkok, Thailand}
       \resumeItemListStart
         \resumeItem{Designed and developed \textbf{Contract Lifecycle Management System} for enterprise back-office operations.}
-        \resumeItem{Built automated \textbf{multi-stage email notification workflows} for contract expiration tracking.}
-        \resumeItem{Reduced manual workload through system automation and alerting mechanisms.}
-        \resumeItem{Implemented \textbf{file attachment and contract tracking features}.}
+        \resumeItem{Engineered automated \textbf{multi-stage email notification workflows} system for contract expiration tracking, reducing manual follow-ups by {95\%} and preventing missed deadlines.}
         \resumeItem{Delivered \textbf{Excel-based reporting tools} to enhance operational visibility.}
     \resumeItemListEnd
 
@@ -201,68 +199,6 @@
       \resumeItemListEnd
     
   \resumeSubHeadingListEnd
-\vspace{-16pt}
-
-%-----------PROGRAMMING SKILLS-----------
-\section{Technical Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{Languages}{: Python, Java, C\#, TypeScript/JavaScript, HTML, CSS, SQL} \\
-     \textbf{Cloud \& Infrastructure}{:AWS, Azure, CI/CD} \\
-     \textbf{Technologies/Frameworks}{:  .Net Core, .Net Framework, Spring Boot, Docker, MS SQL, PostgreSQL, Git, Dynatrace,
-GitHub Copilot, Claude Code} \\
-    }}
- \end{itemize}
- \vspace{-16pt}
-
-%-----------PROJECTS-----------
-\section{Projects}
-    \vspace{-5pt}
-    \resumeSubHeadingListStart
-      \resumeProjectHeading
-          {\textbf{Krungsri Biz Online / Krungsri Biz Mobile}}{}
-          \resumeItemListStart
-            \resumeItem{Mobile banking applications for SME and corporate clients.}
-            \resumeItem{Delivered secure and scalable financial transaction capabilities.}
-          \resumeItemListEnd
-          \vspace{-13pt}
-      \resumeProjectHeading
-          {\textbf{CBDC Krungsri (Deprecated)}}{}
-          \resumeItemListStart
-            \resumeItem{Flutter-based application for Central Bank Digital Currency (CBDC) transactions.}
-            \resumeItem{Wallet Share feature (Main/Sub wallet management).}
-            \resumeItem{Auto Currency Conversion (CBDC \textrightarrow THB) at the end of the day.}
-          \resumeItemListEnd 
-          \vspace{-13pt}
-
-          \resumeProjectHeading
-          {\textbf{KBank Credit Bureau System (KCBS)}}{}
-          \resumeItemListStart
-            \resumeItem{Supports National Credit Bureau (NCB) inquiries via both Batch and Online applications.}
-            \resumeItem{Batch application is used for the Credit Review module.}
-            \resumeItem{Online application is available on both Web and Windows platforms for new credit request modules.}
-          \resumeItemListEnd
-          \vspace{-13pt}
-
-          \resumeProjectHeading
-          {\textbf{KBank Verify Income (KVI)}}{}
-          \resumeItemListStart
-            \resumeItem{Web application for verifying borrowers' income to support credit decision-making.}
-            \resumeItem{Supports statement data import from both KBank and non-KBank accounts.}
-            \resumeItem{Calculates customer income based on predefined rules used in the bank's loan approval process.}
-            \resumeItem{Allows exporting income summaries in Excel or PDF format.}
-          \resumeItemListEnd
-          \vspace{-13pt}
-
-          \resumeProjectHeading
-          {\textbf{Contract Alert System}}{}
-          \resumeItemListStart
-            \resumeItem{Web application for sending email alerts when contracts or documents are approaching their expiration dates, covering companies under SAMART Corporation.}
-            \resumeItem{Supports multiple reminder schedules per document
-and allows file attachments for each contract record.}
-          \resumeItemListEnd 
-    \resumeSubHeadingListEnd
-\vspace{-15pt}
 
  %-----------CERTIFICATIONS---------------
 \section{Certifications}
@@ -270,10 +206,10 @@ and allows file attachments for each contract record.}
         \item[]
             \resumeItemListStart
                 \resumeItem{Azure Data Fundamentals  $|$ Microsoft Certified}
+                \resumeItem{AWS Cloud Practitioner $|$ AWS Certified}
+                \resumeItem{AWS AI Practitioner $|$ AWS Certified}
                 \resumeItem{Google People Management Essentials}
-                \resumeItem{AI Practitioner $|$ AWS Certified}
-            \resumeItemListEnd        
+            \resumeItemListEnd
     \resumeSubHeadingListEnd
-\vspace{-15pt}
 
 \end{document}

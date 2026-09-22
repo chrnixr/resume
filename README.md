@@ -27,13 +27,7 @@ This is my personal resume showcasing 8+ years of experience in:
 **Technologies:** .Net Core, .Net Framework, Spring Boot, Docker, MS SQL, PostgreSQL, Git, Dynatrace, GitHub Copilot, Claude Code
 
 ## 📥 Download Resume
-[📄 Download Resume PDF](./charoen_cv.pdf)
-
-### Page 1
-![Resume Preview - Page 1](./charoen_cv_1.jpg)
-
-### Page 2
-![Resume Preview - Page 2](./charoen_cv_2.jpg)
+[📄 Download Resume PDF](./charoen_resume.pdf)
 
 ---
 ## 🚀 Quick Start
@@ -95,7 +89,7 @@ The `Dockerfile` uses Alpine Linux with:
 - `texlive-luatex` - Advanced LaTeX engine
 - `texmf-dist-latexextra` - Extra packages
 - `texmf-dist-fontsrecommended` - Recommended fonts
-- `fontawesome` - Icon fonts (for FontAwesome icons)
+- `texmf-dist-fontsextra` - Icon fonts (for FontAwesome icons)
 
 ## 📄 Output
 

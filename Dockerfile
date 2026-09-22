@@ -5,7 +5,7 @@ RUN apk add --no-cache \
     texlive-luatex \
     texmf-dist-latexextra \
     texmf-dist-fontsrecommended \
-    fontawesome
+    texmf-dist-fontsextra
 
 WORKDIR /data
 VOLUME ["/data"]
